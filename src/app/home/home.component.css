@@ -1,0 +1,316 @@
+h1 {
+  margin-top: 570px;
+  font-family: "Cabin",sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 2px;
+  z-index: 1000;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+
+}
+
+h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Cabin", Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  width: 100%;
+}
+
+h3 {
+  margin-top: 5px;
+  text-align: center;
+  font-family: "Cabin", Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  width: 100%;
+}
+
+h4 {
+
+  line-height: 75px;
+  text-align: center;
+  font-family: "Cabin", Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+  position: absolute;
+  z-index: 500;
+  display: inline-block;
+  width:250px;
+  text-align: center;
+  cursor: pointer;
+}
+
+h5 {
+  margin-top: 25px;
+  font-family: "Cabin", Helvetica, sans-serif;
+	font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  color: #333333;
+}
+
+h6 {
+  margin-top: 0px;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #333333;
+  letter-spacing: 1.3px;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Cabin", Helvetica, sans-serif;
+  font-size: 10px;
+  display: inline-block;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.home {
+  position:relative;
+  height: 1200px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  -moz-box-sizing: border-box;
+
+}
+
+.home-left {
+  overflow: hidden;
+  height: 700px;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.home-left img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home-right {
+  height: 700px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.home-logo {
+  z-index: 500;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: block;
+}
+
+.home-cert {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  top: 700px;
+  height: 150px;
+}
+
+.home-overview {
+  width: 100%;
+  top: 850px;
+  position: absolute;
+}
+
+.home-links {
+  width: 100%;
+  top: 1100px;
+  height: 100px;
+  position: absolute;
+}
+
+.home-links-keynotes {
+  position: absolute;
+  width: 250px;
+  height: 75px;
+  left: 25%;
+  margin-left: -125px;
+}
+
+.home-links-programs {
+  position: absolute;
+  width: 250px;
+  height: 75px;
+  left: 50%;
+  margin-left: -125px;
+}
+
+.home-links-coaching {
+  position: absolute;
+  width: 250px;
+  height: 75px;
+  left: 75%;
+  margin-left: -125px;
+}
+
+.home-svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.home-logo-small {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .home {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    h6 {
+      margin-top: 0px;
+    }
+
+    .home-right {
+      height: 400px;
+      position: absolute;
+      right: -100px;
+      top: 0;
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .home-logo {
+      display: none;
+    }
+
+    .home-logo-small {
+      display: block;
+      z-index: 500;
+      position: absolute;
+      right: 100px;
+      top: 10px;
+    }
+
+    .home-left {
+      height: 400px;
+
+    }
+
+    .home-left img {
+      height: 100%;
+    }
+
+    .home-cert {
+      box-sizing: border-box;
+      width: 100%;
+      position: absolute;
+      top: 400px;
+
+
+
+      height: auto;
+    }
+
+    .home-overview {
+      width: 100%;
+
+      top: 500px;
+      position: absolute;
+      padding: 0 20px;
+      height: auto;
+    }
+
+    .home-links {
+      width: 100%;
+      top: 900px;
+      height: auto;
+      position: absolute;
+    }
+
+    p {
+      padding: 0 5px;
+    }
+
+    h1 {
+      margin-top: 340px;
+      font-size: 16px;
+      color: white;
+      display: inline-block;
+      width: 100%;
+      letter-spacing: 2px;
+      z-index: 1000;
+      position: absolute;
+      text-align: center;
+      line-height: 16px;
+
+    }
+
+    .home-links-keynotes {
+      position: absolute;
+      width: 250px;
+      height: 75px;
+      left: 50%;
+      margin-left: -125px;
+      top: 0;
+    }
+
+    .home-links-programs {
+      position: absolute;
+      width: 250px;
+      height: 75px;
+      left: 50%;
+      margin-left: -125px;
+      top: 80px;
+    }
+
+    .home-links-coaching {
+      position: absolute;
+      width: 250px;
+      height: 75px;
+      left: 50%;
+      margin-left: -125px;
+      top: 160px;
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .home {
+    margin-top: 50px;
+  }
+}

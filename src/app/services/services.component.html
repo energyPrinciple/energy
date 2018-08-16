@@ -1,0 +1,227 @@
+<div class="services clearfixsmall">
+  <div class="services-left-one clearfixsmall">
+    <h4>Our Services</h4>
+    <h5 class="blue">PROGRAMS</h5>
+    <h6 class="subtitle-left"><span class="font-bold">Half Day Program</span> - How Energy Management affects performance</h6>
+    <p class="programs-paragraph programs-paragraph-left">Our half day program introduces participants to the definition of energy and how energy management impacts performance.<br><br>
+      Using the principles of high performance research and concentrating on the dimensions of physical and emotional energy we teach participants how to keep themselves in high performance mode for longer periods of time by systematically implementing simple behaviours to renewing their energy throughout the day.<br><br>
+      Participants will leave the session with an identified plan of the most important new behaviours to implement in order to deliver their best and remain resilient in the face of relentless demand.
+
+
+<div class="service-request-link programs-request-left orange">CLICK HERE TO REQUEST MORE INFORMATION:
+  <div class="plus-large programs-request-left"><svg-icon src="assets\images\plus-blue-large.svg"></svg-icon></div>
+  <div class="circle-arrow"><svg-icon src="assets\images\circle-arrows.svg"></svg-icon></div>
+</div>
+  </div>
+  <div class="form-holder-left-one clearfixsmall">
+
+    <form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value)" class="form">
+      <svg-icon class="x-button-left-one x-button" src="assets\images\x.svg"></svg-icon>
+      <label class="service-type-label">Please select the services you are interested in:</label><br>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="programs" >
+          <span class="checkmark"></span>
+          Programs<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="keynotes" >
+          <span class="checkmark"></span>
+          Keynotes<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="coaching" >
+          <span class="checkmark"></span>
+          Coaching<br>
+        </div>
+        <label class="standard-labels" for="name">Name * </label><input class="textInput" formControlName="name" type="text" name="name" value="" placeholder="Please enter your name"><br>
+        <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="title">Title * </label><input class="textInput" formControlName="title" type="text" name="title" value="" placeholder="Please enter your title"><br>
+        <div class="alert" *ngIf="!rForm.controls['title'].valid && rForm.controls['title'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="company">Company *</label><input class="textInput" formControlName="company" type="text" name="company" value="" placeholder="Please enter your company name"><br>
+        <div class="alert" *ngIf="!rForm.controls['company'].valid && rForm.controls['company'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="email">Email *</label><input class="textInput" formControlName="email" type="email" name="email" value="" placeholder="Please enter your email"><br>
+        <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="Phone">Phone Number</label><input class="textInput" formControlName="phone" type="text" name="phone" value="" placeholder="Please enter your phone number"><br>
+        <input type="submit" class="submit-button" [disabled]="!rForm.valid" name="button" value="Submit">
+    </form>
+
+  </div>
+
+  <div class="services-right-one clearfixsmall">
+    <h6 class="subtitle-right"><span class="font-bold">Full day program</span> - A better way of working</h6>
+    <p class="programs-paragraph programs-paragraph-right">A deeper dive into the elements of energy management covered in the half day program. In addition to physical and emotional energy the full day program covers the elements of mental energy – strategies for building focused attention and avoiding the pitfalls of relentless multi -tasking and aligning with personal and organizational values.<br><br>
+      The program allows for more team interaction and discussion and the ability to plan a team goal for moving forward as a high performing team.
+</p>
+<div class="service-request-link service-request-link-right programs-request-right purple">CLICK HERE TO REQUEST MORE INFORMATION:
+  <div class="plus-large programs-request-right"><svg-icon src="assets\images\plus-blue-large.svg"></svg-icon></div>
+  <div class="circle-arrow"><svg-icon src="assets\images\circle-arrows.svg"></svg-icon></div>
+</div>
+  </div>
+  <div class="form-holder-right-one clearfixsmall">
+    <form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value)" class="form">
+      <svg-icon class="x-button-right-one x-button" src="assets\images\x.svg"></svg-icon>
+      <label class="service-type-label">Please select the services you are interested in:</label><br>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="programs" >
+          <span class="checkmark"></span>
+          Programs<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="keynotes" >
+          <span class="checkmark"></span>
+          Keynotes<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="coaching" >
+          <span class="checkmark"></span>
+          Coaching<br>
+        </div>
+        <label class="standard-labels" for="name">Name * </label><input class="textInput" formControlName="name" type="text" name="name" value="" placeholder="Please enter your name"><br>
+        <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="title">Title * </label><input class="textInput" formControlName="title" type="text" name="title" value="" placeholder="Please enter your title"><br>
+        <div class="alert" *ngIf="!rForm.controls['title'].valid && rForm.controls['title'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="company">Company *</label><input class="textInput" formControlName="company" type="text" name="company" value="" placeholder="Please enter your company name"><br>
+        <div class="alert" *ngIf="!rForm.controls['company'].valid && rForm.controls['company'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="email">Email *</label><input class="textInput" formControlName="email" type="email" name="email" value="" placeholder="Please enter your email"><br>
+        <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="Phone">Phone Number</label><input class="textInput" formControlName="phone" type="text" name="phone" value="" placeholder="Please enter your phone number"><br>
+        <input type="submit" class="submit-button" [disabled]="!rForm.valid" name="button" value="Submit">
+    </form>
+
+
+  </div>
+  <div class="services-left-two clearfixsmall">
+
+    <h5 class="purple">KEYNOTES</h5>
+    <p class="keynotes-paragraph">Our keynotes introduce attendees to the foundations of energy management, what defines our energy sources, why its important and what it means to manage our energy more effectively. Attendees will get a sense of how effectively they are currently managing their own energy across the four dimensions: physical, emotional, mental and the energy of the human spirit and more fully understand the benefits of implementing new behaviours.<br><br>
+      Use our <span class="font-bold">60 or 90 minute keynotes</span> as a cost effective way to energise, inspire and support your team, your clients, your suppliers and/or your networks:
+</p>
+<ul>
+  <li><svg-icon class="small-purple-plus" src="assets\images\small-purple-plus.svg"></svg-icon>TEAM DAYS</li>
+  <li><svg-icon class="small-purple-plus" src="assets\images\small-purple-plus.svg"></svg-icon>CONFERENCES</li>
+  <li><svg-icon class="small-purple-plus" src="assets\images\small-purple-plus.svg"></svg-icon>BUSINESS BREAKFASTS</li>
+  <li><svg-icon class="small-purple-plus" src="assets\images\small-purple-plus.svg"></svg-icon>CLIENT LUNCHES</li>
+  <li><svg-icon class="small-purple-plus" src="assets\images\small-purple-plus.svg"></svg-icon>NETWORKING EVENTS</li>
+</ul>
+<div class="service-request-link keynotes-request green">CLICK HERE TO REQUEST MORE INFORMATION:
+  <div class="plus-large keynotes-request"><svg-icon src="assets\images\plus-purple-large.svg"></svg-icon></div>
+  <div class="circle-arrow"><svg-icon src="assets\images\circle-arrows.svg"></svg-icon></div>
+</div>
+  </div>
+  <div class="form-holder clearfixsmall">
+    <form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value)" class="form">
+      <svg-icon class="x-button-keynotes x-button" src="assets\images\x.svg"></svg-icon>
+      <label class="service-type-label">Please select the services you are interested in:</label><br>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="programs" >
+          <span class="checkmark"></span>
+          Programs<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="keynotes" >
+          <span class="checkmark"></span>
+          Keynotes<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="coaching" >
+          <span class="checkmark"></span>
+          Coaching<br>
+        </div>
+        <label class="standard-labels" for="name">Name * </label><input class="textInput" formControlName="name" type="text" name="name" value="" placeholder="Please enter your name"><br>
+        <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="title">Title * </label><input class="textInput" formControlName="title" type="text" name="title" value="" placeholder="Please enter your title"><br>
+        <div class="alert" *ngIf="!rForm.controls['title'].valid && rForm.controls['title'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="company">Company *</label><input class="textInput" formControlName="company" type="text" name="company" value="" placeholder="Please enter your company name"><br>
+        <div class="alert" *ngIf="!rForm.controls['company'].valid && rForm.controls['company'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="email">Email *</label><input class="textInput" formControlName="email" type="email" name="email" value="" placeholder="Please enter your email"><br>
+        <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="Phone">Phone Number</label><input class="textInput" formControlName="phone" type="text" name="phone" value="" placeholder="Please enter your phone number"><br>
+        <input type="submit" class="submit-button" [disabled]="!rForm.valid" name="button" value="Submit">
+    </form>
+
+
+  </div>
+  <div class="services-right-two clearfixsmall">
+    <img src="assets/images/mic-bw-web.jpg" alt="">
+  </div>
+  <div class="services-left-three">
+    <h5 class="green h-green">COACHING</h5>
+    <p class="coaching-paragraph">The process of transformation is not always pleasant and it takes an investment of energy. It means creating the space within, from which a new expression of ourselves can emerge<br><br>
+      It’s easier to take the path of least resistance, thinking that we have already arrived at the best part of ourselves.<br><br>
+      The energy principle coaching program helps individuals and small teams to sustainably implement energy management principles for the longer term. The program is a cost effective way to support and sustain high performing individuals and teams.<br>
+
+    </p>
+<div class="service-request-link coaching-request blue">CLICK HERE TO REQUEST MORE INFORMATION:
+  <div class="plus-large coaching-request"><svg-icon src="assets\images\plus-green-large.svg"></svg-icon></div>
+  <div class="circle-arrow"><svg-icon src="assets\images\circle-arrows.svg"></svg-icon></div>
+</div>
+  </div>
+  <div class="form-holder-left-three clearfixsmall">
+    <form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value)" class="form">
+      <svg-icon class="x-button-left-three x-button" src="assets\images\x.svg"></svg-icon>
+      <label class="service-type-label">Please select the services you are interested in:</label><br>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="programs" >
+          <span class="checkmark"></span>
+          Programs<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="keynotes" >
+          <span class="checkmark"></span>
+          Keynotes<br>
+        </div>
+        <div class="checkbox-holder">
+          <input class="checkbox" type="checkbox" name="servicetype" value="1" formControlName="coaching" >
+          <span class="checkmark"></span>
+          Coaching<br>
+        </div>
+        <label class="standard-labels" for="name">Name * </label><input class="textInput" formControlName="name" type="text" name="name" value="" placeholder="Please enter your name"><br>
+        <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="title">Title * </label><input class="textInput" formControlName="title" type="text" name="title" value="" placeholder="Please enter your title"><br>
+        <div class="alert" *ngIf="!rForm.controls['title'].valid && rForm.controls['title'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="company">Company *</label><input class="textInput" formControlName="company" type="text" name="company" value="" placeholder="Please enter your company name"><br>
+        <div class="alert" *ngIf="!rForm.controls['company'].valid && rForm.controls['company'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="email">Email *</label><input class="textInput" formControlName="email" type="email" name="email" value="" placeholder="Please enter your email"><br>
+        <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+          {{titleAlert}}
+        </div>
+        <label class="standard-labels" for="Phone">Phone Number</label><input class="textInput" formControlName="phone" type="text" name="phone" value="" placeholder="Please enter your phone number"><br>
+        <input type="submit" class="submit-button" [disabled]="!rForm.valid" name="button" value="Submit">
+    </form>
+
+
+  </div>
+  <div class="services-right-three">
+    <img src="assets/images/laughing-bw-web.jpg" alt="">
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  overflow: hidden;
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding: 0;
+  padding-bottom: 1000px;
+  }
+
+  .clearfixsmall:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfixsmall { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfixsmall { height: 1%; }
+  .clearfixsmall { display: block; }
+  /* close commented backslash hack */
+
+}

@@ -1,0 +1,53 @@
+<div class="container clearfix clearfixsmall">
+  <button type="button" name="button" (click)="logOut()">Log out</button>
+  <h2><a routerLink="/upload" >Upload Content</a></h2>
+  <h2><a routerLink="/addtest" >Add testimonial</a></h2>
+
+  <form #uploadForm="ngForm" class="form">
+
+
+    <select class="page" name="page" (change)="onSelectChange($event.target.value)">
+      <option value="1" [selected]="true">Blog</option>
+      <option value="2">Things to see and do</option>
+    </select>
+    <br>
+    <label for="title">Title</label>
+    <p>Please enter the title of the Blog or Things to See and Do post here:</p>
+    <br>
+    <input type="text" name="title" value="" [(ngModel)]="title">
+    <br>
+    <div class="link-holder" >
+      <label for="link">Link</label>
+      <p>Enter you link to Things to see or do here:</p>
+      <br>
+      <input type="text" name="link" value="" [(ngModel)]="link">
+    </div>
+    <br>
+    <label for="discription">Description</label>
+    <p>Enter the description here:</p>
+    <br>
+    <textarea name="description" rows="8" cols="80" [(ngModel)]="description"></textarea>
+    <br>
+    <label for="vidimage">Please choose if you are uploading a Image or adding a Youtube url here</label>
+    <br>
+    <select class="image-or-video" name="vidimage" (change)="onImageVidChange($event.target.value)">
+      <option value="1" [selected]="true">Upload an Image</option>
+      <option value="2">Add a link to Youtube</option>
+    </select>
+    <div class="image-holder">
+      <label for="Image">Image</label>
+      <p>Choose you image file here:</p>
+      <br>
+      <input type="file" name="selectedFile" id="selectedFile" (change)="handleFiles($event)" >
+      <br>
+    </div>
+    <div class="youtube-link-holder">
+      <label for="youtubelink">Youtube Link</label>
+      <p>Paste Youtube link here, make sure it is an embed link eg: "https://www.youtube.com/embed/na7lIb09898"</p>
+      <br>
+      <input type="text" name="youtubelink" value="" [(ngModel)]="youtubelink">
+    </div>
+
+    <button type="button" name="button" (click)="uploadFiles()">Upload</button>
+  </form>
+</div>

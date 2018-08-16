@@ -1,0 +1,21 @@
+<div class="container clearfix clearfixsmall">
+  <button type="button" name="button" (click)="logOut()">Log out</button>
+  <h2><a routerLink="/upload" >Upload Content</a></h2>
+  <h2><a routerLink="/addtest" >Add testimonial</a></h2>
+
+  <form #uploadForm="ngForm" class="form">
+    <br>
+    <label for="name">Name</label>
+    <br>
+    <input type="text" name="name" value="" [(ngModel)]="name">
+    <br>
+
+    <br>
+    <label for="testimonial">testimonial</label>
+    <br>
+    <textarea name="testimonial" rows="8" cols="80" [(ngModel)]="testimonial"></textarea>
+    <br>
+    
+    <button type="button" name="button" (click)="uploadFiles()">Upload</button>
+  </form>
+</div>

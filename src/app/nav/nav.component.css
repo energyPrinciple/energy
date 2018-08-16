@@ -1,0 +1,155 @@
+
+
+nav {
+  height: 200px;
+  position:fixed;
+  left: 30px;
+  top: 20px;
+  z-index: 3000;
+  width: 150px;
+
+}
+
+a {
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  color: #222222;
+  font-size: 100%;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+ul {
+  font-family: "Cabin", sans-serif;
+  color: #222222;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  z-index: 100;
+  cursor: pointer;
+}
+li {
+  position: relative;
+  z-index: 500;
+}
+
+li:before, li:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 22px;
+  top: -3px;
+  margin-top: -0.5px;
+  background: #EB7834;
+  z-index: -100;
+  -webkit-transform: skew(-8deg); -moz-transform: skew(-8deg); -o-transform: skew(-8deg);
+}
+
+li:before {
+  left: -2.5px;
+  z-index: -100;
+}
+li:after {
+  right: 2.5px;
+  background: #EB7834;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  z-index: -100;
+}
+
+li:hover:before {
+  background: #EB7834;
+  width: 90%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  z-index: -100;
+}
+
+li:hover:after {
+  background: transparent;
+  width: 0%;
+  transition: 0s;
+  z-index: -100;
+}
+
+.nav-background {
+  position:absolute;
+  top: -40px;
+  left: -10px;
+  z-index: -100;
+
+}
+
+.home-pipe{
+  opacity: 0;
+
+}
+
+.home-space {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    text-align: center;
+    position:fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 3000;
+    width: 100%;
+    padding-top: 10px;
+    height: 50px;
+    background: white;
+
+  }
+
+  li:hover:before {
+    background: #EB7834;
+    width: 105%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: -100;
+  }
+
+  li:before {
+    left: 0px;
+
+  }
+
+  .home-pipe{
+    opacity: 1;
+
+  }
+  .home-space {
+    padding-left: 0px;
+  }
+
+  .nav-background {
+    display: none;
+  }
+
+  ul {
+
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    z-index: 100;
+    cursor: pointer;
+    margin: 0 auto;
+
+  }
+
+  ul li {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+
+    height: 55px;
+    background: white;
+
+  }
+
+}

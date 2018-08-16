@@ -1,0 +1,352 @@
+h1 {
+  font-family: "Cabin",sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+  letter-spacing: 1.5px;
+
+  text-align: left;
+  line-height: 25px;
+
+}
+
+h4 {
+  font-family: "Cabin",sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #333333;
+  width: 100%;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 20px;
+  text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.things-link {
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  color: #EB7834;
+  text-align: left;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Cabin", Helvetica, sans-serif;
+	font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  color: #333333;
+}
+
+
+.blog-things-nav {
+  width: 100%;
+  height: 135px;
+  background: white;
+  position: fixed;
+  top: -35px;
+  z-index: 1000;
+  -ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari */
+    transform: skewY(-5deg);
+    overflow: hidden;
+
+}
+
+.white-space {
+  width: 100%;
+  height: 45px;
+  background: white;
+  position: fixed;
+  top: 0px;
+  z-index: 500;
+}
+
+
+
+.blog-things-logo {
+  position: fixed;
+  left: 30px;
+  top: 20px;
+  height: 80px;
+  width: 180px;
+  background: none;
+  z-index: 2000;
+
+
+}
+
+
+
+.blog-things-container {
+  padding-top: 150px;
+
+
+}
+
+.blog-things-title {
+    position: fixed;
+    top: 20px;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    z-index: 2000;
+    left: -1%;
+
+}
+
+.blog-things-home-link {
+  width: 60px;
+  height: 45px;
+  position: fixed;
+  top:20px;
+  z-index: 2000;
+  right: 20px;
+
+
+}
+
+.blog-things-individual {
+  width: 100%;
+  float: left;
+
+  position: relative;
+
+  min-height: 200px;
+  padding-right: 50px;
+  margin-bottom: 100px;
+
+}
+
+.blog-things-image-left {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  height: 250px;
+  width: 300px;
+  -webkit-transform: skew(-5deg);
+  -moz-transform: skew(-5deg);
+  -o-transform: skew(-5deg);
+}
+
+.blog-things-image-right {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  height: 250px;
+  width: 300px;
+  -webkit-transform: skew(5deg);
+  -moz-transform: skew(5deg);
+  -o-transform: skew(5deg);
+}
+
+.blog-things-text {
+
+
+  margin-left: 350px;
+  margin-top: -250px;
+  white-space:pre-wrap;
+
+}
+.blog-things-posted {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  height: 25px;
+
+  text-align: right;
+  margin-top: 0px;
+  font-family: "Georgia", serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #333333;
+  letter-spacing: 1.3px;
+}
+
+.skew-left {
+  overflow: hidden;
+  -webkit-transform: skew(5deg);
+  -moz-transform: skew(5deg);
+  -o-transform: skew(5deg);
+  width: 300px;
+  height: 250px;
+  margin: 0;
+
+
+}
+
+.video-left-side {
+  width: 300px;
+  height: 250px;
+  margin: 0;
+}
+
+.skew-right {
+  overflow: hidden;
+  -webkit-transform: skew(-5deg);
+  -moz-transform: skew(-5deg);
+  -o-transform: skew(-5deg);
+  width: 300px;
+  height: 250px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Cabin", sans-serif;
+  color: #222222;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+h3:before, h3:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 22px;
+  top: -3px;
+  margin-top: -0.5px;
+  background: #984AEE;
+  z-index: -100;
+  -webkit-transform: skew(-8deg); -moz-transform: skew(-8deg); -o-transform: skew(-8deg);
+}
+
+h3:before {
+  left: -2.5px;
+  z-index: -100;
+}
+h3:after {
+  right: 2.5px;
+  background: #984AEE;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  z-index: -100;
+}
+
+h3:hover:before {
+  background: #984AEE;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  z-index: -100;
+}
+
+h3:hover:after {
+  background: transparent;
+  width: 0%;
+  transition: 0s;
+  z-index: -100;
+}
+
+
+.wrapper {
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+
+  h4 {
+
+    font-size: 25px;
+    margin-left: 0px;
+    letter-spacing: 1.5px;
+  }
+
+
+  .blog-things-nav {
+      top: -20px;
+
+  }
+
+  .blog-things-logo {
+
+  }
+  .blog-things-home-link {
+    right: 5px;
+    top: 20px;
+
+
+  }
+
+  .blog-things-title {
+      margin-left: 30px;
+      top: 20px;
+  }
+
+
+  .blog-things-text {
+
+
+    margin-left: 30px;
+    margin-top: 10px;
+
+  }
+
+  .blog-things-image-left {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height: 200px;
+    width: 350px;
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+  }
+
+  .blog-things-image-right {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height: 200px;
+    width: 350px;
+    -webkit-transform: skew(5deg);
+    -moz-transform: skew(5deg);
+    -o-transform: skew(5deg);
+  }
+
+  .skew-left {
+    overflow: hidden;
+    -webkit-transform: skew(5deg);
+    -moz-transform: skew(5deg);
+    -o-transform: skew(5deg);
+    width: 350px;
+    height: 200px;
+    margin: 0;
+
+
+  }
+  .video-left-side {
+    margin-left: 30px;
+  }
+
+  .skew-right {
+    overflow: hidden;
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+    width: 350px;
+    height: 200px;
+    margin: 0;
+  }
+
+  .blog-things-individual {
+
+    padding-right: 30px;
+    margin-bottom: 50px;
+
+  }
+
+  .wrapper {
+    padding: 0 !important;
+  }
+
+}

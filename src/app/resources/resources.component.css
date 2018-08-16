@@ -1,0 +1,132 @@
+.resources {
+  height: 700px;
+  position: relative;
+  box-sizing: border-box;
+}
+.resources-snapshot {
+  position: absolute;
+  height: 95px;
+  width: 450px;
+  top: 20%;
+  left: 50%;
+  margin-left: -225px;
+}
+.resources-things {
+  position: absolute;
+  top: 60%;
+
+  height: 95px;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+
+}
+
+.resources-blogs  {
+  position: absolute;
+  height: 95px;
+  width: 450px;
+  top: 40%;
+  left: 50%;
+  margin-left: -225px;
+}
+.resource-hover {
+  cursor: pointer;
+}
+
+
+.resources-ebook {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  height: 95px;
+  width: 450px;
+  margin-left: -225px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Cabin", Helvetica, sans-serif;
+
+  font-weight: bold;
+  color: white;
+
+}
+
+h6 {
+  font-family: "Cabin", Helvetica, sans-serif;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  line-height: 26px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  z-index: 500;
+  display: inline-block;
+  width: 450px;
+  text-align: center;
+  line-height: 95px;
+}
+
+.slant-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+  .resources {
+    padding-bottom: 50px;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 0;
+    top: 1000px;
+  }
+
+.resources-snapshot {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  left: 50%;
+  margin-left: -225px;
+
+}
+.resources-things {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  left: 50%;
+  margin-left: -225px;
+
+}
+
+.resources-blogs  {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  left: 50%;
+  margin-left: -225px;
+}
+.resource-hover {
+  cursor: pointer;
+}
+
+
+.resources-ebook {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  left: 50%;
+  margin-left: -225px;
+
+
+}
+h6 {
+
+  font-size: 16px;
+
+
+}
+ }

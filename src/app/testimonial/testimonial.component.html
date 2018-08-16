@@ -1,0 +1,29 @@
+<div class="testimonial clearfixsmall">
+  <h4>Testimonials</h4>
+  <!--<div class="testimonial-left-column">
+
+    <div class="testimonial-left-holder" *ngFor="let item of items | async" >
+      <svg-icon class="white-cutoff" src="assets\images\white-cutoff-right-bottom.svg"></svg-icon>
+
+      <img src="{{item.url}}">
+    </div>
+  </div>
+  <div class="testimonial-right-column">
+    <div class="testimonial-right-holder" *ngFor="let item of items | async">
+      <h6>{{ item.name }}</h6>
+      <p>{{ item.testimonial }}</p>
+
+    </div>
+  </div>-->
+
+  <carousel [(activeSlide)]="activeSlideIndex" >
+    <slide *ngFor="let item of items | async;">
+        <div class="testimonial-right">
+          <h6>{{ item.name }}</h6>
+          <p>{{ item.testimonial }}</p>
+        </div>
+
+    </slide>
+  </carousel>
+
+</div><!--testimonial -->

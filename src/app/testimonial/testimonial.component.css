@@ -1,0 +1,124 @@
+h4 {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #333333;
+  letter-spacing: 1.3px;
+  margin-bottom: 20px;
+}
+
+h6 {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #333333;
+  letter-spacing: 1.3px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+
+
+
+}
+
+p {
+
+	font-family: "Cabin", Helvetica, sans-serif;
+	font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  color: #333333;
+  margin: 20px 50px 50px 50px;
+}
+
+.testimonial {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 0;
+  margin: 0px 0px 50px 0px;
+  overflow: hidden;
+
+}
+
+.item {
+  width: 100%;
+}
+
+::ng-deep .carousel .carousel-control-prev-icon {
+      background-image: url("/assets/images/prev.png");
+      width: 50px;
+      height: 50px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      top: 20px;
+}
+
+::ng-deep .icon-prev::before {
+  display: none;
+}
+
+::ng-deep .carousel .carousel-control-next-icon {
+  background-image: url("/assets/images/next.png");
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 20px;
+}
+
+::ng-deep .icon-next::before {
+  display: none;
+}
+
+:host >>>.item img {
+  margin-left: 50%;
+  -ms-transform: translate(-100%, 0); /* IE 9 */
+    -webkit-transform: translate(-100%, 0); /* Safari */
+    transform: translate(-100%, 0);
+    padding-right: 50px;
+
+
+}
+
+
+
+
+.carousel-indicators {
+  display: none !important;
+}
+
+
+:host >>>.carousel-control {
+  background: none;
+}
+
+
+
+
+
+
+
+.testimonial-right {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 0 100px;
+
+}
+
+@media screen and (max-width: 800px) {
+  .testimonial {
+    top: 1000px;
+    padding-bottom: 50px;
+  }
+  .testimonial-right {
+    padding: 0px 0px;
+  }
+
+  h4 {
+
+    margin-left: 20px;
+  }
+}
