@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule  } from '@angular/http';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { RouterModule, Routes }               from '@angular/router';
-
+import { BootstrapModalModule } from 'ng2-bootstrap-modal';
 import { environment } from '../environments/environment';
 
 import { AuthService } from './auth.service';
@@ -12,6 +12,8 @@ import { AuthGuardService } from './auth-guard.service';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
+
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AngularFireModule }          from 'angularfire2';
 import { AngularFireDatabaseModule }  from 'angularfire2/database';
@@ -37,6 +39,7 @@ import { LoginComponent } from './login/login.component';
 import { AddTestComponent } from './admin/add-test/add-test.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { YoutubePipe } from './youtube.pipe';
+import { ModalSurveyComponent } from './modals/modal-survey/modal-survey.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,8 @@ import { YoutubePipe } from './youtube.pipe';
     LoginComponent,
     AddTestComponent,
     TestimonialComponent,
-    YoutubePipe
+    YoutubePipe,
+    ModalSurveyComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,10 @@ import { YoutubePipe } from './youtube.pipe';
     HttpModule,
     AngularSvgIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule.forRoot(),
+    BootstrapModalModule.forRoot({container:document.body})
+
   ],
   providers: [
     AuthGuardService,
@@ -74,6 +81,9 @@ import { YoutubePipe } from './youtube.pipe';
     EmailSendService,
     UploadService,
     FileUploaderServiceService
+  ],
+  entryComponents: [
+   ModalSurveyComponent
   ],
   bootstrap: [AppComponent]
 })

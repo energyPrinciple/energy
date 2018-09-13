@@ -82,3 +82,35 @@ table {
 .blue {
 	color: #5AB4F9;
 }
+bs-modal-backdrop {
+	z-index: 4000 !important;
+}
+modal-container {
+	z-index: 4001 !important;
+}
+.modal.fade:not(.in) .modal-dialog {
+	-webkit-transform: translate3d(125%, 0, 0);
+	transform: translate3d(125%, 0, 0);
+	transition:all 2s;
+}
+.chimpModal .modal-content{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+	background: none;
+}
+.chimpModal.modal-dialog {
+    top: 24%;
+    margin: 0px;
+}
+.chimpModal.modal-dialog {
+    overflow: hidden;
+    width: 100%;
+    height: 198px;
+}
+@media screen and (max-width: 480px) {
+		.chimpModal.modal-dialog {
+		    height: auto;
+		}
+}

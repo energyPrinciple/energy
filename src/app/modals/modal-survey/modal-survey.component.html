@@ -1,0 +1,53 @@
+  <div  (mouseenter) = "activeModal()" (mouseleave)="inactiveModal()"  class="modal-content parallelogram">
+     <!-- <div class="modal-header">
+       <button type="button" class="close" (click)="close()" >&times;</button>
+       <h4 class="modal-title">{{title || 'Confirm'}}</h4>
+     </div> -->
+     <div class="modal-body">
+       <button (click)="closeModal()" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+       <h3>COULD YOU BE FACING A PERSONAL ENERGY CRISIS?</h3>
+       <p>Discover how much fuel you have in your tank by taking our 90 second survey</p>
+       <form id = "mailchimp-form" class="mailchimp-form" [formGroup]="MailchimpForm">
+       <!-- <form ngNoForm action="http://www.theenergyprinciple.com.au/energy_survey/" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""> -->
+        <div class = "clearfix">
+            <div class = "input-section">
+                <div class = "clearfix">
+                  <div class = "label-section">
+                      <label>First Name*</label>
+                  </div>
+                  <div class = "text-section">
+                	   <input formControlName="chimpFname" type="text" class="" id="mce-FNAME" placeholder="" (focus)="focusMe(1)" (blur)="focusMe(0)">
+                  </div>
+                </div>
+                <div class = "clearfix">
+                  <div class = "label-section">
+                      <label>Last Name*</label>
+                  </div>
+                  <div class = "text-section">
+              	     <input formControlName="chimpLname" type="text" class="" id="mce-LNAME" placeholder="" (focus)="activeModal()" (focus)="focusMe(1)" (blur)="focusMe(0)">
+                  </div>
+                </div>
+                <div class = "clearfix">
+                  <div class = "label-section">
+                      <label>Email*</label>
+                  </div>
+                  <div class = "text-section">
+                  	 <input formControlName="chimpEmail" type="email" class="required email" id="mce-EMAIL" placeholder="" (focus)="focusMe(1)" (blur)="focusMe(0)">
+                  </div>
+                </div>
+            </div>
+
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups  b_abcdc2321e61030e5c89e44ea_5dbaa640c0"-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" formControlName="chimpCode" tabindex="-1"></div>
+            <div class = "controller-section">
+              <button class = "take" (click)="takeSurvey()">TAKE SURVEY</button>
+              <!-- <div class="clear"><input type="submit" value="TAKE SURVEY" name="subscribe" id="mc-embedded-subscribe" class="button"></div> -->
+            </div>
+        </div>
+      </form>
+     </div>
+     <!-- <div class="modal-footer">
+       <button type="button" class="btn btn-primary" (click)="confirm()">OK</button>
+       <button type="button" class="btn btn-default" (click)="close()" >Cancel</button>
+     </div> -->
+   </div>
