@@ -40,6 +40,8 @@ import { AddTestComponent } from './admin/add-test/add-test.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { YoutubePipe } from './youtube.pipe';
 import { ModalSurveyComponent } from './modals/modal-survey/modal-survey.component';
+import { PostComponent } from './blog/post/post.component';
+import { ReversePipe } from './reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ModalSurveyComponent } from './modals/modal-survey/modal-survey.compone
     AddTestComponent,
     TestimonialComponent,
     YoutubePipe,
-    ModalSurveyComponent
+    ModalSurveyComponent,
+    PostComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,

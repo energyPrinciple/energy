@@ -6,6 +6,8 @@ import { AngularFireDatabase, AngularFireList }   from 'angularfire2/database';
 
 //import { BlogthingsService }            from '../blogthings.service';
 import { Projects }                     from '../models/projects.model';
+import { ReversePipe } from '../reverse.pipe';
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -86,8 +88,13 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit() {
+  //   this.items = this.db.list('blog', {
+  //    query: {
+  //     orderByChild: "order",
+  //    }
+  //   }
+  // ).valueChanges();
     this.items = this.db.list('blog').valueChanges();
-    
     //this.projects = this.blogthingsService.getBlogs();
     //this will get all posts for the home page
     //needs to be adjusted to get only a thumbnail of the recent posts

@@ -6,11 +6,13 @@ import { UploadPageComponent } from './app/admin/upload-page/upload-page.compone
 import { AddTestComponent } from './app/admin/add-test/add-test.component';
 import { LoginComponent }      from './app/login/login.component';
 import { AuthGuardService }     from './app/auth-guard.service';
+import { PostComponent } from './app/blog/post/post.component';
 
 export const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent},
   { path: 'blog', component: BlogComponent },
+  { path: 'blog/post/:link', component: PostComponent },
   { path: 'things', component: ThingsComponent },
   { path: 'addtest', component: AddTestComponent },
   { path: 'upload', component: UploadPageComponent },
