@@ -42,6 +42,18 @@ import { YoutubePipe } from './youtube.pipe';
 import { ModalSurveyComponent } from './modals/modal-survey/modal-survey.component';
 import { PostComponent } from './blog/post/post.component';
 import { ReversePipe } from './reverse.pipe';
+import { NavBarComponent } from './admin/nav-bar/nav-bar.component';
+import { SideBarComponent } from './admin/side-bar/side-bar.component';
+import { MainAdminComponent } from './admin/main/main.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { TestimonalListComponent } from './admin/testimonal-list/testimonal-list.component';
+import { TestimonialEditComponent } from './admin/testimonial-edit/testimonial-edit.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BlogListComponent } from './admin/blog-list/blog-list.component';
+import { BlogEditComponent } from './admin/blog-edit/blog-edit.component';
+import { ThingsListComponent } from './admin/things-list/things-list.component';
+import { ThingsEditComponent } from './admin/things-edit/things-edit.component';
+import { ThingsAddComponent } from './admin/things-add/things-add.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +73,18 @@ import { ReversePipe } from './reverse.pipe';
     YoutubePipe,
     ModalSurveyComponent,
     PostComponent,
-    ReversePipe
+    ReversePipe,
+    NavBarComponent,
+    SideBarComponent,
+    MainAdminComponent,
+    DashboardComponent,
+    TestimonalListComponent,
+    TestimonialEditComponent,
+    BlogListComponent,
+    BlogEditComponent,
+    ThingsListComponent,
+    ThingsEditComponent,
+    ThingsAddComponent
   ],
   imports: [
     BrowserModule,
@@ -76,8 +99,8 @@ import { ReversePipe } from './reverse.pipe';
     FormsModule,
     ReactiveFormsModule,
     ModalModule.forRoot(),
-    BootstrapModalModule.forRoot({container:document.body})
-
+    BootstrapModalModule.forRoot({container:document.body}),
+    ToastrModule.forRoot()
   ],
   providers: [
     AuthGuardService,

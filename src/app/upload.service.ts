@@ -8,6 +8,9 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { Upload }                 from './models/upload.model';
 import { UploadTest }                 from './models/uploadtest.model';
 import * as firebase            from 'firebase';
+import { ToastrService } from 'ngx-toastr';
+import {Router} from "@angular/router";
+
 @Injectable()
 export class UploadService {
   //http://localhost/tepscripts/upload-file.php
@@ -16,7 +19,9 @@ export class UploadService {
 
   constructor(
     private ngFire: AngularFireModule,
-    private db: AngularFireDatabase
+    private db: AngularFireDatabase,
+    private tostr: ToastrService,
+    private router: Router
   ) { }
 
 
@@ -45,16 +50,23 @@ export class UploadService {
     console.log("uptype" + uploadType);
     var created = this.todaysDate();
     this.db.list(`${uploadType}/`).push({title: title, description: description, link: link, youtubelink: youtubelink, created: created});
-    alert("Upload youtube successful");
-
+    // alert("Upload youtube successful");
+    if (uploadType == '/blog') {
+      this.tostr.success('Blog Succcessfully Added');
+      this.router.navigate(['/admin/blog-list/']);
+    } else if (uploadType == '/things') {
+      this.tostr.success('Things to See and Do Succcessfully Added');
+      this.router.navigate(['/admin/thing-list/']);
+    }
   }
 
   uploadTestimonial(name: string, testimonial: string){
     console.log("testimonial");
     const uploadType = "testimonial";
     this.db.list(`${uploadType}/`).push({name: name, testimonial: testimonial});
-    alert("Upload Testimonial successful");
-
+    // alert("Upload Testimonial successful");
+    this.tostr.success('Testimonial Succcessfully Added');
+    this.router.navigate(['/admin/testimonial-list/']);
 }
 
 private saveTestFileData(uploadPost: UploadTest, uploadType: string) {
@@ -98,7 +110,15 @@ private saveTestFileData(uploadPost: UploadTest, uploadType: string) {
 
   private saveFileData(uploadPost: Upload, uploadType: string) {
     this.db.list(`${uploadType}/`).push(uploadPost);
-    alert("Upload successful");
+    // alert("Upload successful");
+    if (uploadType == '/blog') {
+      this.tostr.success('Blog Succcessfully Added');
+      this.router.navigate(['/admin/blog-list/']);
+    } else if (uploadType == '/things') {
+      this.tostr.success('Things to See and Do Succcessfully Added');
+      this.router.navigate(['/admin/thing-list/']);
+    }
+
   }
 
 

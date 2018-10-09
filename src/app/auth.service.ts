@@ -5,6 +5,8 @@ import { AngularFireDatabase }  from 'angularfire2/database';
 import * as firebase            from 'firebase/app';
 import { Observable }           from 'rxjs/Observable';
 import { User }                 from './models/user.model';
+import { ToastrService } from 'ngx-toastr';
+
 @Injectable()
 export class AuthService {
 
@@ -14,7 +16,8 @@ export class AuthService {
   constructor(
     private afAuth: AngularFireAuth,
     private db: AngularFireDatabase,
-    private router: Router
+    private router: Router,
+    private tostr: ToastrService
   ) {
       this.user = afAuth.authState;
   }
@@ -33,9 +36,11 @@ export class AuthService {
   login(email: string, password: string) {
     return this.afAuth.auth.signInWithEmailAndPassword(email, password)
       .then(resolve => {
-        console.log('logged in');
+        this.tostr.success('Welcome Back Admin!');
         this.router.navigate(['admin']);
-      });
+      }, reject => {
+              this.tostr.error('The Username and Password is Incorrect!');
+            });
   }
 
    setUserStatus(status: string): void {
@@ -58,6 +63,7 @@ export class AuthService {
 
   logout() {
     this.afAuth.auth.signOut();
+    this.tostr.success('You are Successfully Logged out');
     this.router.navigate(['home']);
   }
 

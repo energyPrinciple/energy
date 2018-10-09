@@ -27,7 +27,12 @@ constructor(private modalService: BsModalService,
   this.router.events.subscribe((event)  => {
 
       if(event instanceof NavigationStart) {
-          if ((event.url != '/admin') && (event.url != '/addtest') && (event.url != '/upload') && (this.statusPage != 0) ) {
+          if ((event.url != '/admin')
+          && ((event.url).substring(0, 6)!= '/admin')
+          && (event.url != '/addtest')
+          && (event.url != '/upload')
+          && (event.url != '/login')
+          && (this.statusPage != 0) ) {
                 this.statusPage = 0;
                 setTimeout(()=>{
                     this.modalRef = this.modalService.show(ModalSurveyComponent,this.config);

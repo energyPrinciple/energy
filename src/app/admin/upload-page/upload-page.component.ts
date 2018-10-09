@@ -56,24 +56,24 @@ export class UploadPageComponent {
     }
   }
 
-  onSelectChange(event){
+  // onSelectChange(event){
+  //
+  //
+  //   if(event == 2){
+  //     this.selectOption = 2;
+  //     this.uploadType = "/things";
+  //     $(".link-holder").show();
+  //   } else {
+  //     this.selectOption = 1;
+  //     this.uploadType = "/blog";
+  //     $(".link-holder").hide();
+  //   }
+  //   console.log(this.selectOption);
+  // }
 
-
-    if(event == 2){
-      this.selectOption = 2;
-      this.uploadType = "/things";
-      $(".link-holder").show();
-    } else {
-      this.selectOption = 1;
-      this.uploadType = "/blog";
-      $(".link-holder").hide();
-    }
-    console.log(this.selectOption);
-  }
-
-  logOut() {
-    this.authService.logout();
-  }
+  // logOut() {
+  //   this.authService.logout();
+  // }
 
   uploadFiles() {
     console.log(this.selectImageVidOption);

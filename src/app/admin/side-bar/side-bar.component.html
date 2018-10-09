@@ -1,0 +1,31 @@
+<!-- MENU SIDEBAR-->
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="#" style = "margin: 0 auto;display: block;">
+            <img style = "max-height: 70px;padding: 5px;" src="assets\images\the-energy-principle-logo.png" alt="Energy Principle" />
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+                <li>
+                    <a routerLinkActive="active" routerLink="/admin" [routerLinkActiveOptions]="{ exact: true }" href="#">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a routerLinkActive="active" routerLink="testimonial-list" href="#">
+                        <i class="fa fa-comments"></i>Testimonial</a>
+                </li>
+                <li>
+                    <a routerLinkActive="active" routerLink="blog-list" href="#">
+                        <i class="fa fa-pencil"></i>Blog</a>
+                </li>
+                <li>
+                    <a routerLinkActive="active" routerLink="thing-list" href="#">
+                        <i class="fa fa-tasks"></i>Things to See and Do</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END MENU SIDEBAR-->

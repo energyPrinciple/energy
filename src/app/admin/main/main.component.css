@@ -1,0 +1,30 @@
+.main-content {
+    padding-top: 116px;
+    min-height: 100vh;
+}
+section {
+    position: relative;
+}
+
+.section__content {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+.section__content--p30 {
+    padding: 0 30px;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-wrapper {
+    overflow: hidden;
+}
+.page-container {
+    background: #e5e5e5;
+    padding-left: 300px;
+}

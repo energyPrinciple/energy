@@ -1,0 +1,79 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">Dashboard</div>
+          <div class="card-body">
+<!-- /.row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div *ngIf="testimonialsCount != ''" class="huge">{{ (testimonialsCount | async).length }}</div>
+                                    <div>Testimonials</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="testimonial-list" href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View List of Testimonials</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-pencil fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div *ngIf="blogsCount != ''" class="huge">{{ (blogsCount | async).length }}</div>
+                                    <div>Blogs</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="blog-list" href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View List of Blogs</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div *ngIf="thingsCount != ''" class="huge">{{ (thingsCount | async).length }}</div>
+                                    <div>Things to See and Do</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="thing-list" href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View List of Things to See and Do</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -109,6 +109,43 @@ modal-container {
     width: 100%;
     height: 198px;
 }
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  overflow: hidden;
+
+}
+.toast-container {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: Roboto,'Helvetica Neue',Arial,sans-serif;
+	line-height: 1.4!important;
+	letter-spacing: -.1px!important;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding: 0;
+  padding-bottom: 1000px;
+  }
+
+  .clearfixsmall:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfixsmall { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfixsmall { height: 1%; }
+  .clearfixsmall { display: block; }
+  /* close commented backslash hack */
+
+}
 @media screen and (max-width: 480px) {
 		.chimpModal.modal-dialog {
 		    height: auto;

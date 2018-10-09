@@ -1,38 +1,39 @@
-<div class="blog-things-nav"></div>
-<div class="blog-things-logo">
-      <svg-icon class="" src="assets/images/log-blog-things.svg"></svg-icon>
-</div>
-<div class="blog-things-title">
-  <h4>OUR BLOG</h4>
-</div>
-<div class="blog-things-home-link">
-  <h3><a routerLink="/home" >Home</a></h3>
-</div>
-<div class="white-space">
+<div class="wrapper clearfixsmall">
+    <div class="blog-things-nav"></div>
+    <div class="blog-things-logo">
+          <svg-icon class="" src="assets/images/log-blog-things.svg"></svg-icon>
+    </div>
+    <div class="blog-things-title">
+      <h4>OUR BLOG</h4>
+    </div>
+    <div class="blog-things-home-link">
+      <h3><a routerLink="/home" >Home</a></h3>
+    </div>
+    <div class="white-space">
 
-</div>
-<div class="blog-things-container clearfix">
+    </div>
+    <div class="blog-things-container clearfix">
 
-      <div class="blog-things-individual clearfix" *ngFor="let item of blogPost | async">
-        <div *ngIf="item.youtubelink !==undefined" class="video-left-side">
-          <iframe width="300" height="250" [src]="item.youtubelink | youtube">
-          </iframe>
-        </div>
-        <div *ngIf="item.url !==undefined" class="skew-right">
-          <img src="{{item.url}}" class="blog-things-image-right">
-        </div>
-        <div class="blog-things-text clearfix">
-          	<ol class="breadcrumb">
-          		<li><a routerLink="/home">Home</a></li>
-          		<li><a routerLink="/blog">Blog</a></li>
-          		<li class="active">{{ (item.title.length>20)? (item.title | slice:0:20)+'..':(item.title) }}</li>
-          	</ol>
-          <h1 class="green">{{ item.title | uppercase}}</h1>
-            <p>{{ item.description }}</p>
+          <div class="blog-things-individual clearfix" *ngFor="let item of blogPost | async">
+            <div *ngIf="item.youtubelink !==undefined" class="video-left-side">
+              <iframe width="300" height="250" [src]="item.youtubelink | youtube">
+              </iframe>
+            </div>
+            <div *ngIf="item.url !==undefined" class="skew-right">
+              <img src="{{item.url}}" class="blog-things-image-right">
+            </div>
+            <div class="blog-things-text clearfix">
+              	<ol class="breadcrumb">
+              		<li><a routerLink="/home">Home</a></li>
+              		<li><a routerLink="/blog">Blog</a></li>
+              		<li class="active">{{ (item.title.length>20)? (item.title | slice:0:20)+'..':(item.title) }}</li>
+              	</ol>
+              <h1 class="green">{{ item.title | uppercase}}</h1>
+                <p>{{ item.description }}</p>
+              </div>
+              <div class="blog-things-posted">
+                <h2>Posted on: {{item.created}}</h2>
+              </div>
           </div>
-          <div class="blog-things-posted">
-            <h2>Posted on: {{item.created}}</h2>
-          </div>
-      </div>
-
+    </div>
 </div>

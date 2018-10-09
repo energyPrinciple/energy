@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+              <div class="card-header">Blog
+              <button class = "btn-add" [routerLink]="['/admin/blog-add/']"> Add Blog </button>
+              </div>
+              <div class="card-body">
+                  <div class="card-title">
+                      <h3 class="text-center title-2">List of Blogs</h3>
+                  </div>
+                  <hr>
+                      <!-- DATA TABLE-->
+                      <div class="table-responsive m-b-40">
+                          <table class="table table-borderless table-data3">
+                              <thead>
+                                  <tr>
+                                      <th>Title</th>
+                                      <th>Description</th>
+                                      <th>Date Created</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let blogItem of blogList;">
+                                      <td>{{ blogItem.title }}</td>
+                                      <td>{{ (blogItem.description.length>200)? (blogItem.description | slice:0:200)+'...':(blogItem.description) }}</td>
+                                      <td>{{ blogItem.created }}</td>
+                                      <td>
+                                          <div class="table-data-feature">
+                                              <button [routerLink]="['/admin/blog-edit/', blogItem.$key]" class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                                  <i class="fa fa-edit"></i>
+                                              </button>
+                                              <button (click)="deleteBlog(blogItem.$key)" class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                                  <i class="fa fa-trash"></i>
+                                              </button>
+                                          </div>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <!-- END DATA TABLE-->
+              </div>
+        </div>
+    </div>
+</div>
